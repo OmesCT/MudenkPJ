@@ -3,8 +3,9 @@ import { useState } from "react";
 export default function App() {
   const [level, setLevel] = useState(0);
   const [imageIndex, setImageIndex] = useState(0);
-  const images = ["public/images/รูปภาพ1.jpg", "public/images/Mudenkupgrade.jpg"];
-  const buttonImages = ["public/images/แตงโฒ.jpg", "public/images/ฟักทอง.jpg", "public/images/R.png"];
+  const images = ["https://th.bing.com/th?id=OIF.aqI60ITb%2bxGPsPCdvj27qg&rs=1&pid=ImgDetMain", "https://image.springnews.co.th/uploads/images/contents/w1024/2024/09/Hek7ScjSWDHtoQnJCEmv.webp?x-image-process=style/lg-webp"];
+  const buttonImages = ["https://th.bing.com/th/id/R.0e536b382ec4703e5b7448e419715c63?rik=ZN8n84tqGd3RvQ&pid=ImgRaw&r=0", 
+    "https://png.pngtree.com/png-clipart/20201010/ourlarge/pngtree-orange-pumpkin-cartoon-clipart-png-image_2359861.jpg", "https://th.bing.com/th/id/OIP.3zSE5UYn4LNz1Zj0MyoggQHaHa?rs=1&pid=ImgDetMain"];
 
   const increaseLevel = (increment) => {
     setLevel((prevLevel) => {
