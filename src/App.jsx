@@ -5,20 +5,20 @@ export default function App() {
   const [imageIndex, setImageIndex] = useState(0);
   const images = ["public/images/รูปภาพ1.jpg", "public/images/Mudenkupgrade.jpg"];
   const buttonImages = ["public/images/แตงโฒ.jpg", "public/images/ฟักทอง.jpg", "public/images/R.png"];
-  
+
   const increaseLevel = (increment) => {
     setLevel((prevLevel) => {
       const newLevel = prevLevel + increment;
       if (newLevel >= 100) {
-        setImageIndex(1); 
+        setImageIndex(1);
       }
       return newLevel;
     });
   };
 
   const resetLevel = () => {
-    setLevel(0);      
-    setImageIndex(0); 
+    setLevel(0);
+    setImageIndex(0);
   };
 
   const imageSize = `${Math.max(level * 5, 45)}px`;
@@ -127,17 +127,17 @@ export default function App() {
             </p>
           </div>
           <div style={{ textAlign: "center" }}>
-            <button 
-              onClick={resetLevel} 
-              style={{ 
-                padding: "10px 20px", 
-                fontSize: "18px", 
-                cursor: "pointer", 
-                backgroundColor: "#e74c3c", 
-                color: "white", 
-                border: "none", 
+            <button
+              onClick={resetLevel}
+              style={{
+                padding: "10px 20px",
+                fontSize: "18px",
+                cursor: "pointer",
+                backgroundColor: "#e74c3c",
+                color: "white",
+                border: "none",
                 borderRadius: "5px",
-                marginTop: "10px" 
+                marginTop: "10px"
               }}
             >
               Reset
